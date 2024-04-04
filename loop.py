@@ -11,18 +11,24 @@
 #   count += 1
 
 
-i = 0
-while i <= 10:
-  if(i % 2 == 0):
-    i+=1
-    continue
-  print("even", i)
-  i+=1
+# i = 0
+# while i <= 10:
+#   if(i % 2 == 0):
+#     i+=1
+#     continue
+#   print("even", i)
+#   i+=1
   
-  values = ["gowtam", "paul"]
-  
-  for elem in values:
-    print("elemmtn", elem)
+#   values = ["gowtam", "paul"]
+for elem in range(0,10):
+  # pass pass mean skip
+  print("elemmtn", elem)
 
-  else: 
-    print("End")
+else: 
+  print("End")
+  
+## range(start, stop, step)
+seq = range(5)## stop(5) 
+print(seq[0])
+print(seq[1])
+print(seq[2])
