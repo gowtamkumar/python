@@ -25,14 +25,25 @@
 # print(createFile)
 
 ## delete file 
-import os
+# import os
+# if os.path.exists('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt'):
+#   os.remove('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt')
+# else: 
+#   print("This file does not exist")
+#   cretefile = open('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt', 'w')
+#   cretefile.write("hello python. i am learn python")
 
-if os.path.exists('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt'):
-  os.remove('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt')
-else: 
-  print("This file does not exist")
-  cretefile = open('/home/gowtam-dev/Desktop/practice/python/learn-python/file/demo.txt', 'w')
-  cretefile.write("hello python. i am learn python")
+# create folder
+import os
+# os.makedirs('/home/gowtam-dev/Desktop/practice/python/learn-python/file/new-folder')
+
+## delete folder
+
+if not os.path.exists('/home/gowtam-dev/Desktop/practice/python/learn-python/file/new-folder'):
+  print("this folder is not exits")
+  os.makedirs('/home/gowtam-dev/Desktop/practice/python/learn-python/file/new-folder') ## create folder
+else:
+  os.rmdir('/home/gowtam-dev/Desktop/practice/python/learn-python/file/new-folder') ## delete folder
 
 
 # file inner text loop
