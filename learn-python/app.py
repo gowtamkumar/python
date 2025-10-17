@@ -194,3 +194,15 @@ print(type(range(5)))
 # Iterable
 for z in "learn python":
     print(z)
+
+
+# while loop
+number = 100
+while number > 0:
+    print(number)
+    number //= 2
+
+command = ""
+while command.lower() != "quit":
+    command = input(">")
+    print("Echo", command)
