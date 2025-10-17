@@ -202,7 +202,32 @@ while number > 0:
     print(number)
     number //= 2
 
-command = ""
-while command.lower() != "quit":
-    command = input(">")
-    print("Echo", command)
+# command = ""
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("Echo", command)
+
+
+# function with default paramiter
+def greet(first_name, last_anme="kumar"):
+    print(f"Hi {first_name} {last_anme}")
+    print("Welcome aboard")
+
+
+greet("gowtam")
+
+
+def get_greeting(name):
+    return f"Hi {name}"
+
+
+message = get_greeting("gowtam")
+file = open("doc.md", "w")
+file.write(message)
+
+
+def multiply(*mumbers):
+    print(mumbers)
+
+
+multiply(1, 2, 3, 4, 5, 6, 7)
