@@ -168,5 +168,29 @@ if 18 <= age < 65:
 
 # loop
 # for loop
-for number in range(21):
-    print("Attempt", number + 1, (number + 1) * ".")
+for number in range(1, 90):
+    print("this only loop", number)
+
+# for loop  range start, end else with break
+successfull = False
+for number in range(2, 10):
+    print("Attempt", number, number * ".")
+    if successfull:
+        print("Successfull")
+        break
+else:
+    print("Attenmpted 3 time and failed")
+
+# nested loop
+
+for x in range(2, 3):
+    for y in range(20, 22):
+        print(f"({x}, {y})")
+
+print(type(3))
+print(type(range(5)))
+
+
+# Iterable
+for z in "learn python":
+    print(z)
