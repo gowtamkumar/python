@@ -1,32 +1,32 @@
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
 
-result = add(40, 22)
-print(result)
+# result = add(40, 22)
+# print(result)
 
 
-def greet():
-    return "Hello, World!"
+# def greet():
+#     return "Hello, World!"
 
 
-print(greet())
+# print(greet())
 
 
-def print_expense(amount):
-    print(f"Expense amount: {amount}")
+# def print_expense(amount):
+#     print(f"Expense amount: {amount}")
 
 
-print_expense(100)
+# print_expense(100) 
 
 
-def calculate_area(len, wid):
-    return len, wid
+# def calculate_area(len, wid):
+#     return len, wid
 
 
-len, wid = calculate_area(5, 10)
-print(f"Length: {len}, Width: {wid}")
-
+# len, wid = calculate_area(5, 10)
+# print(f"Length: {len}, Width: {wid}")
+ 
 
 # def get_user():
 #     name = input("Enter your name: ")
@@ -101,13 +101,11 @@ print(counter)  # Output: 5
 
 # Nested Functions
 
-
+def inner_function():
+        print("This is the inner function.")
+        
 def outer_function():
     print("This is then outer function.")
-
-    def inner_function():
-        print("This is the inner function.")
-
     inner_function()
 
 
@@ -136,10 +134,13 @@ print(result)
 
 total_result = [x * 2 for x in result]
 print(total_result)
+# Lambda + filter()
+chai_types = ["Masala", "Adrak", "Elaichi", "Kashmiri", "Adrak"]
+strong_cai = list(filter(lambda chai: chai == "Adrak", chai_types))
+print(strong_cai)  # Output: ['Adrak', 'Adrak']
+
 
 # Docstrings
-
-
 def calculation_total(price, quantity):
     """
     calculate the total price
@@ -155,6 +156,11 @@ def calculation_total(price, quantity):
 
 print(calculation_total(10, 30))
 
+# recursion function
+def pour_cai(n):
+        if n == 0:
+            return "all cups poured"
+        return pour_cai(n - 1)
 
 # | JavaScript             | Python               |
 # | ---------------------- | -------------------- |

@@ -1,146 +1,147 @@
-for k in range(10):
-    print(k)
+# for i in range(11):
+#     print(i)
 
-for i in range(1, 11):
-    print(i)
+# for i in range(1, 11):
+#     print(i)
 
+# fruits = ["apple", "banana", "cherry"]
 
-for j in range(0, 10, 2):
-    print(j)
+# for fruit in fruits:
+#     print(fruit)
 
+# expenses = [
+#     {"id": 1, "title": "Lunch", "amount": 250},
+#     {"id": 2, "title": "Uber", "amount": 380},
+# ]
 
-fruits = ["apple", "banana", "cherry"]
+# for expense in expenses:
+#     print(f"Expense ID: {expense['id']}")
 
-for fruit in fruits:
-    print(fruit)
+# user = {"name": "Gowtam", "age": 30, "role": "Developer"}
 
+# for key in user:
+#     print(f"key is: {user[key]}")
+    
+# for key, value in user.items():
+#     print(key, value)
 
-expenses = [
-    {"id": 1, "title": "Lunch", "amount": 250},
-    {"id": 2, "title": "Uber", "amount": 380},
-]
+# # while loop
+# counter = 0
+# while counter < 5:
+#     print(counter)
+#     counter += 1
+    
+# print("Counter is now:", counter)    
 
-for expense in expenses:
-    print(expense["title"])
+# # break
+# for i in range(10):
+#     if i == 8:
+#         break
+#     print(i)
 
-
-user = {"name": "Gowtam", "age": 30, "role": "Developer"}
-
-for key in user:
-    print(user[key])
-
-for key, value in user.items():
-    print(key, value)
-
-# while loop
-counter = 0
-
-while counter < 5:
-    print(counter)
-    counter += 1
-
-# break
-for i in range(10):
-    if i == 5:
-        break
-    print(i)
-
-for i in range(5):
-    if i == 2:
-        continue
-    print(i)
+# for i in range(1,5):
+#     if i == 2:
+#         continue
+#     print(i)
 
 
-for i in range(5):
-    if i == 2:
-        pass
-    print(i)
+# for i in range(5):
+#     if i == 2:
+#         pass
+#     print(i)
 
-# enumerate
-expenses = ["Lunch", "Uber", "Shopping"]
+# zip
+# amounts = [250, 380, 3000]
+# titles = ["Lunch", "Uber", "Shopping"]
 
-for index, expense in enumerate(expenses):
-    print(index, expense)
+# for amount, title in zip(amounts, titles):
+#     print(f"Amount: {amount}, Title: {title}")
 
-for index, expense in enumerate(expenses, start=1):
-    print(index, expense)
+# # enumerate
+# expenses = ["Lunch", "Uber", "Shopping"]
 
-# Loop With range() and List Index
-print(len(expenses))
+# for index, expense in enumerate(expenses, start=1):
+#     print(index, expense)
 
+# for index, expense in enumerate(expenses, start=1):
+#     print(index, expense)
 
-# nested loops
-print("Nested Loops")
-for i in range(5):
-    for j in range(5):
-        print(i, j)
-
-
-expenses = [
-    {"title": "Lunch", "amount": 250},
-    {"title": "Laptop", "amount": 50000},
-    {"title": "Uber", "amount": 380},
-]
-
-for expense in expenses:
-    if expense["amount"] > 250:
-        print(expense["title"], expense["amount"])
-
-# List Comprehension
-numbers = []
-
-for i in range(1, 100):
-    # if i % 2 == 0:
-    numbers.append(i)
-
-print(numbers)
-
-# JS map() vs Python List Comprehension
-numbers = [1, 2, 3, 4, 5]
-
-doubled_numbers = [n * 2 for n in numbers]
-print(doubled_numbers)
-
-# JS filter() vs Python Comprehension
-
-even_numbers = [n for n in numbers if n % 2 == 0]
-print(even_numbers)
+# # Loop With range() and List Index
+# print(len(expenses))
 
 
-expenses = [
-    {"title": "Lunch", "amount": 250},
-    {"title": "Laptop", "amount": 50000},
-    {"title": "Uber", "amount": 380},
-    {"title": "Shopping", "amount": 3000},
-]
-
-expense_filtered = [expense for expense in expenses if expense["amount"] > 500]
-print(expense_filtered)
+# # nested loops
+# print("Nested Loops")
+# for i in range(5):
+#     for j in range(5):
+#         print(i, j)
 
 
-# JavaScript                         Python
-# ──────────────────────────────────────────────
+# expenses = [
+#     {"title": "Lunch", "amount": 250},
+#     {"title": "Laptop", "amount": 50000},
+#     {"title": "Uber", "amount": 380},
+# ]
 
-# for (let i = 0; i < 5; i++)        for i in range(5):
+# for expense in expenses:
+#     if expense["amount"] > 250:
+#         print(expense["title"], expense["amount"])
 
-# for (const item of items)          for item in items:
+# # List Comprehension
+# numbers = []
 
-# for (const key in obj)             for key in obj:
+# for i in range(1, 100):
+#     # if i % 2 == 0:
+#     numbers.append(i)
 
-# Object.entries(obj)                obj.items()
+# print(numbers)
 
-# items.forEach(...)                 for item in items:
+# # JS map() vs Python List Comprehension
+# numbers = [1, 2, 3, 4, 5]
 
-# items.map(...)                     [x for x in items]
+# doubled_numbers = [n * 2 for n in numbers]
+# print(doubled_numbers)
 
-# items.filter(...)                  [x for x in items if ...]
+# # JS filter() vs Python Comprehension
 
-# break                               break
+# even_numbers = [n for n in numbers if n % 2 == 0]
+# print(even_numbers)
 
-# continue                            continue
 
-# while (condition)                  while condition:
+# expenses = [
+#     {"title": "Lunch", "amount": 250},
+#     {"title": "Laptop", "amount": 50000},
+#     {"title": "Uber", "amount": 380},
+#     {"title": "Shopping", "amount": 3000},
+# ]
 
-# i++                                i += 1
+# expense_filtered = [expense for expense in expenses if expense["amount"] > 500]
+# print(expense_filtered)
 
-# i--                                i -= 1
+
+# # JavaScript                         Python
+# # ──────────────────────────────────────────────
+
+# # for (let i = 0; i < 5; i++)        for i in range(5):
+
+# # for (const item of items)          for item in items:
+
+# # for (const key in obj)             for key in obj:
+
+# # Object.entries(obj)                obj.items()
+
+# # items.forEach(...)                 for item in items:
+
+# # items.map(...)                     [x for x in items]
+
+# # items.filter(...)                  [x for x in items if ...]
+
+# # break                               break
+
+# # continue                            continue
+
+# # while (condition)                  while condition:
+
+# # i++                                i += 1
+
+# # i--                                i -= 1
